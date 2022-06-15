@@ -1,0 +1,35 @@
+.joke-card{
+   background-color: white;
+   border-radius: 2px;
+   margin: 10px 0;
+   padding: 10px;
+
+   width: 100%;
+   max-width: 700px;
+}
+.delete-button{
+background-color: red;
+color: white;
+border: none;
+border-radius: 3px;
+padding: 5px 10px;
+
+}
+
+.tell-me-button{
+background-color: yellow;
+color: maroon;
+border: none;
+border-radius: 3px;
+padding: 5px 10px;
+margin: 10px 5px;
+
+}
+
+.question{
+    font-size: 20px;
+}
+
+.answer{
+    font-size: 15px;
+}

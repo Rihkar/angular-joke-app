@@ -1,0 +1,39 @@
+<form [formGroup]="jokeForm">
+  <label for="question">
+    Question<input
+      class="joke-input"
+      formControlName="question"
+      type="text"
+      id="question"
+    />
+  </label>
+
+  <small
+    class="input-validation"
+    *ngIf="
+      jokeForm.get('question')?.touched &&
+      jokeForm.get('question')?.hasError('required')
+    "
+  >
+    question is required
+  </small>
+  <label for="answer">
+    Answer
+    <input
+      class="joke-input"
+      formControlName="answer"
+      type="text"
+      id="answer"
+    />
+  </label>
+  <small
+    class="input-validation"
+    *ngIf="
+      jokeForm.get('answer')?.touched &&
+      jokeForm.get('answer')?.hasError('required')
+    "
+  >
+    asnwer is required
+  </small>
+  <div class="create-joke-button-wrapper"><button class="create-joke-button" (click)="addJoke()">Create</button></div>
+</form>

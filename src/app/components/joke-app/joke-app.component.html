@@ -1,0 +1,6 @@
+<div class="joke-container">
+  <app-joke-input (addJokeEvent)="addJoke($event)"></app-joke-input>
+  <app-joke-output [jokes]="jokes"
+  (deleteJokeEvent)="deleteJoke($event)"
+  ></app-joke-output>
+</div>

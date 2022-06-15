@@ -1,0 +1,15 @@
+<div class="joke-card">
+  <div>
+    <div class="question">
+      {{ joke?.question }}
+    </div>
+  </div>
+  <div>
+    <div class="answer" *ngIf="showAnswer">
+      {{ joke?.answer }}
+    </div>
+  </div>
+  <button class="tell-me-button" (click)="toggleShowAnswer()">Tell me</button>
+
+  <button class="delete-button" (click)="deleteJoke()">Delete</button>
+</div>
